@@ -72,7 +72,7 @@ if ~exist('IPCAparams','var')
     threshold = 0.01;
     M = min(n^2,N);
     Z = randn(M,n);
-    kernelparams = struct('ktype','polynomial','theta',1/sqrt(2),'p',2);
+    kernelparams = struct('ktype','polynomial','theta',1/sqrt(2),'deg',2);
 else
     
     if ~isfield(IPCAparams,'thresholdtype')
@@ -118,7 +118,7 @@ else
     end
     
     if ~isfield(IPCAparams,'kernelparams')
-        kernelparams = struct('ktype','polynomial','theta',1/sqrt(2),'p',2);
+        kernelparams = struct('ktype','polynomial','theta',1/sqrt(2),'deg',2);
     else
         kernelparams = IPCAparams.kernelparams;
     end
