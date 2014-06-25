@@ -43,10 +43,11 @@ function IPCA_evalresult = IPCA_eval(Xtest,IPCAresult,evalparams)
 %     leftProjN     an Ntest x m matrix of whitened left principal projections
 %    Manifold Components/Dual Principal Components:
 %     rightDist     an Ntest x m matrix of residual right projection vectors
-%     rightDistSq   an Ntext-vector of their squared lengths
+%     rightDistSq   an Ntest-vector of their squared lengths
 %     leftDist      an Ntest x m matrix of residual left projection vectors
-%     leftDistSq    an Ntext-vector of their squared lengths
+%     leftDistSq    an Ntest-vector of their squared lengths
 %
+%    [outputname]_time contains the total time needed for IPCA and evaluation
 %
 %authors
 %  Franz Király <f.kiraly@ucl.ac.uk>
