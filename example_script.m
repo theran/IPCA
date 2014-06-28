@@ -3,7 +3,7 @@
 % needs to be completed before use
 
 
-%STEP 1 - load data.
+% STEP 1 - load data.
 
 data_to_learn_features = %read in data from which features are learnt
 data_to_evaluate_features = %read in data for which to extract features, these canbut need not be the same
